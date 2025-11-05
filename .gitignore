@@ -1,0 +1,67 @@
+# ==========================================
+# Node / Ionic
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Build e distribuição
+
+dist/
+build/
+output/
+coverage/
+
+# ==========================================
+# Capacitor
+# ==========================================
+# Android
+android/
+#android/.gradle/
+#android/.idea/
+#android/local.properties
+#android/app/build/
+#android/build/
+#android/capacitor-cordova-android-plugins/
+
+# iOS
+ios/App/Pods/
+ios/App/build/
+ios/App/Podfile.lock
+ios/App/DerivedData/
+ios/App/xcuserdata/
+ios/build/
+ios/capacitor-cordova-ios-plugins/
+
+# ==========================================
+# Plugins Cordova
+# ==========================================
+plugins/
+
+# ==========================================
+# Ambientes / Configurações locais
+# ==========================================
+www/firebaseConfig.js
+.env
+.env.*
+*.local
+*.iml
+
+# ==========================================
+# VS Code / IDEs
+# ==========================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ==========================================
+# Sistema operacional
+# ==========================================
+.DS_Store
+Thumbs.db
