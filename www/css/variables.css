@@ -1,0 +1,6 @@
+:root {
+    --color-dark: #131313;
+    --color-primary: linear-gradient(137deg,rgba(163, 100, 218, 1) 0%, rgba(153, 118, 184, 1) 46%, rgba(87, 53, 116, 1) 93%);
+    --color-secundary: #2D2F31;
+    --color-text: rgb(128, 128, 128);
+}
