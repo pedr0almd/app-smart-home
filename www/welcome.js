@@ -2,7 +2,7 @@ class WelcomePage extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
   <ion-app>
-        <ion-content class="home">
+        <ion-content>
             <ion-grid>
                 <ion-row class="ion-justify-content-center ion-align-items-center" style="height: 100vh;">
                     <ion-col size="10" size-md="6" size-lg="4">

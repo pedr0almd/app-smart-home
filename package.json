@@ -16,5 +16,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedr0almd/app-smart-home.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pedr0almd/app-smart-home/issues"
+  },
+  "homepage": "https://github.com/pedr0almd/app-smart-home#readme",
   "description": ""
 }

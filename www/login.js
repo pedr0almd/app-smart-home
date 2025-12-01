@@ -72,7 +72,6 @@ class LoginPage extends HTMLElement {
     const showError = document.querySelector(".showError");
     const router = document.querySelector("ion-router");
 
-    // Funções
     loginButton.addEventListener("click", () => {
       const email = emailInput.value.trim();
       const password = passwordInput.value.trim();
@@ -86,7 +85,11 @@ class LoginPage extends HTMLElement {
 
       signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
-          router.push("/home");
+          return userCredential.user.getIdToken().then((token) => {
+            console.log("Token Firebase:", token);
+            localStorage.setItem("firebaseToken", token);
+            return router.push("/home");
+          });
         })
         .catch((error) => {
           showError.innerHTML =

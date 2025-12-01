@@ -8,8 +8,6 @@
 
 .card {
   flex: 1 1 200px;
-  min-width: 120px;
-  max-width: 300px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -23,7 +21,7 @@
 }
 
 .enable {
-  background: #a364da;
+  background-color: #a364da;
   background: linear-gradient(
     137deg,
     rgba(163, 100, 218, 1) 0%,
@@ -31,6 +29,10 @@
     rgba(87, 53, 116, 1) 93%
   );
   color: var(--color-dark);
+}
+
+.hidden {
+  display: none;
 }
 
 .circle-icon {
@@ -91,7 +93,6 @@
   display: flex;
   align-items: center;
   justify-content: left;
-  
 }
 
 .slider .icon {
@@ -116,13 +117,6 @@ input:checked + .slider {
 }
 
 input:checked + .slider .icon {
-
-  background: #a364da;
-  background: linear-gradient(
-    137deg,
-    rgba(163, 100, 218, 1) 0%,
-    rgba(153, 118, 184, 1) 46%,
-    rgba(87, 53, 116, 1) 93%
-  );
+  background: #000000;
+  color: #a364da;
 }
-

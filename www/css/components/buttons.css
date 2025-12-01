@@ -12,9 +12,15 @@
   color: #808080;
 }
 
-.add-devicer {
-  color:#a364da;
+.active {
+  background: var(--color-dark);
+  color: #a364da;
 }
+
+
+/* .add-device {
+  color:#a364da;
+} */
 
 .circle-device-group {
   display: flex;
