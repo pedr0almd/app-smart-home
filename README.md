@@ -2,6 +2,11 @@
 
 Este foi um experimento feito para simular o controle de dispositivos inteligentes através do APP para Android. A simulação foi feita através de um Broker MQTT e o Led conectado a uma placa virtual ESP32.
 
+<p align="center">
+  <img src="./www/assets/gifs/demo.gif" alt="Demonstração" width="500">
+</p>
+
+
 ## Principais Funcionalidades
 
 - Autenticação pelo Firebase com Cadastro e Login
@@ -16,11 +21,27 @@ Este foi um experimento feito para simular o controle de dispositivos inteligent
 
 ## Configuração das Variáveis de Ambiente
 
-Antes de inicializar o projeto, crie um arquivo `firebaseConfig.js` 
+Antes de inicializar o projeto, crie um arquivo chamado`firebaseConfig.js` 
 ```bash
 app-smart-home/
 ├── www/
 │ └── firebaseConfig.js
+```
+
+Utilize as suas credenciais no arquivo `firebaseConfig.js`, seguindo o seguinte formarto:
+
+```bash
+const firebaseConfig = {
+  apiKey: "",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: "",
+};
+
+export default firebaseConfig;
 ```
 
 ## Instalando dependências
@@ -58,7 +79,7 @@ npx cap open android
 
 1. Clone este repositório
 ```bash
-git clone https://github.com/usuario/nome-do-projeto.git
+git clone https://github.com/pedr0almd/app-smart-home
 ```
 
 2. Abra a pasta no VSCode
